@@ -35,6 +35,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use 'will_paginate'for page separation
 gem 'will_paginate', '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
+# Use Carrierwave for image uploads
+gem 'carrierwave', '1.2.2'
+gem 'mini_magick', '4.7.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -62,6 +65,8 @@ group :production do
   gem 'pg'
   # Use reddis for ActionCable function in Heroku
   gem 'redis', ' ~> 3.3'
+  # Use Fog for Image Cloud Storage
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
