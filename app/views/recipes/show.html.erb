@@ -1,11 +1,11 @@
 <%= render "shared/page_title", title: @recipe.name %>
 
 <div class= "well col-md-8 col-md-offset-2">
-  <h4 class= "description center"><strong>Steps: </strong></h4>
+  <h4 class= "description center"><strong>Description: </strong></h4>
   <hr />
     <%= simple_format(@recipe.description) %>
   <br />
-    <%= image_tag @recipe.picture.url if @recipe.picture? %>
+    <div class="images"><%= image_tag @recipe.picture.url if @recipe.picture? %></div>
   <% if @recipe.ingredients.any? %>
     <p><strong>Ingredients:</strong> <%= render @recipe.ingredients %></p>
   <% end %>
