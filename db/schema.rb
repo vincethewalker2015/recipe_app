@@ -10,23 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180804134152) do
+ActiveRecord::Schema.define(version: 2018_08_04_134152) do
 
   create_table "chefs", force: :cascade do |t|
-    t.string   "chefname"
-    t.string   "email"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
-    t.string   "password_digest"
-    t.boolean  "admin",           default: false
+    t.string "chefname"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "password_digest"
+    t.boolean "admin", default: false
   end
 
   create_table "comments", force: :cascade do |t|
-    t.text     "description"
-    t.integer  "chef_id"
-    t.integer  "recipe_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.text "description"
+    t.integer "chef_id"
+    t.integer "recipe_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "ingredients", force: :cascade do |t|
@@ -34,16 +34,16 @@ ActiveRecord::Schema.define(version: 20180804134152) do
   end
 
   create_table "likes", force: :cascade do |t|
-    t.boolean  "like"
-    t.integer  "chef_id"
-    t.integer  "recipe_id"
+    t.boolean "like"
+    t.integer "chef_id"
+    t.integer "recipe_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "messages", force: :cascade do |t|
-    t.text     "content"
-    t.integer  "chef_id"
+    t.text "content"
+    t.integer "chef_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -54,12 +54,12 @@ ActiveRecord::Schema.define(version: 20180804134152) do
   end
 
   create_table "recipes", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.integer  "chef_id"
-    t.string   "picture"
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "chef_id"
+    t.string "picture"
   end
 
 end
