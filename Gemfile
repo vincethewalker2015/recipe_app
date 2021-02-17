@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 5.2'
 # Use Bootstrap for CSS Styling
 gem 'bootstrap-sass', '3.4.1'
 
