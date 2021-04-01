@@ -36,7 +36,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 # Use Carrierwave for image uploads
-gem 'carrierwave', '1.2.2'
+gem 'carrierwave', '1.3.2'
 gem 'mini_magick', '4.9.4'
 
 # Use Capistrano for deployment
